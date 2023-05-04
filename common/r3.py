@@ -45,8 +45,6 @@ class R3:
     def rad_vec(self):
         return sqrt(self.x**2 + self.y**2 + self.z**2)
 
-    
-
 
 if __name__ == "__main__":
     x = R3(1.0, 1.0, 1.0)

@@ -11,12 +11,12 @@ try:
         print("=============================================================")
         print(f"Начало работы с полиэдром '{name}'")
         start_time = time()
-        pol = Polyedr(f"/home/gepasky/Desktop/polyhedron-main/0/polyhedron-main/data/{name}.geom")
+        pol = Polyedr(f"data/{name}.geom")
         print(f"Площадь граней = {pol.ret_sqr()}")
         pol.draw(tk)
         delta_time = time() - start_time
         print(f"Изображение полиэдра '{name}' заняло {delta_time} сек.")
         input("Hit 'Return' to continue -> ")
-except(EOFError, KeyboardInterrupt):
+except (EOFError, KeyboardInterrupt):
     print("\nStop")
     tk.close()
