@@ -193,7 +193,7 @@ class Polyedr:
             if 1 < i.center().x**2 + i.center().y**2 + i.center().z**2 < 4\
                     and any(1 < n.x**2 + n.y**2 + n.z**2 < 4
                             for n in i.vertexes):
-                print(cnt+2905)
+                # print(cnt+2905)
                 self.sqr += i.sqr()
             cnt += 1
 
