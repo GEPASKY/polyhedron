@@ -123,7 +123,6 @@ class Facet:
             vec = self.vertexes[i] - self.vertexes[0]
             vec1 = self.vertexes[i-1] - self.vertexes[0]
             all_sqr += R3.rad_vec(vec.cross(vec1)) / 2
-            # print(f"vec = {vec}, vec1 = {vec1}, площадь граней = {all_sqr}")
         return all_sqr
 
     def __repr__(self, vertexes):
